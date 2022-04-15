@@ -88,8 +88,8 @@ jobs:
           username: ${{secrets.PROD_USERNAME}}
           password: ${{secrets.PROD_PASSWORD}}
           script: |
-          cd app/src
-          git pull
-          echo password | sudo -S systemctl restart api
+            cd app/src
+            git pull
+            echo password | sudo -S systemctl restart api
 
         
